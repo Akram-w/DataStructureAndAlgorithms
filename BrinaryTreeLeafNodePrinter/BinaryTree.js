@@ -16,7 +16,7 @@ class BinaryTree {
             if (node === undefined) {
                 return
             }
-            if ((node.left == undefined) && (node.right === undefined)) {
+            if ((node.left === undefined) && (node.right === undefined)) {
                 console.log(node.value);
                 return
             }
