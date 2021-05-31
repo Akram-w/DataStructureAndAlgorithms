@@ -1,0 +1,12 @@
+{
+    "name": "binary-tree-pre-order-traversal",
+    "version": "1.0.0",
+    "description": "Algorithm to traversal binary tree using preOrder traversal",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC"
+}

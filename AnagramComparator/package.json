@@ -1,0 +1,15 @@
+{
+    "name": "anogram-comparator",
+    "version": "1.0.0",
+    "description": "Algorithm for string anogram comparing",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

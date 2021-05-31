@@ -1,0 +1,12 @@
+{
+    "name": "binary-tree-leaf-node-printer",
+    "version": "1.0.0",
+    "description": "Algorithm to print binary tree leaf nodes",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC"
+}

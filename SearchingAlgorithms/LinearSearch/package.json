@@ -1,0 +1,12 @@
+{
+    "name": "linear-search-algorithm",
+    "version": "1.0.0",
+    "description": "Algorithm for Linear Search",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC"
+}

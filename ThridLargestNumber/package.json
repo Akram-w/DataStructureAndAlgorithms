@@ -1,0 +1,15 @@
+{
+    "name": "third-largest-number",
+    "version": "1.0.0",
+    "description": "Find thrid largest number from array",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

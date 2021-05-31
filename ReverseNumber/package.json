@@ -1,0 +1,12 @@
+{
+    "name": "reverse-number",
+    "version": "1.0.0",
+    "description": "Reversing the given number order to opposite direction",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Akram-w",
+    "license": "ISC"
+}
