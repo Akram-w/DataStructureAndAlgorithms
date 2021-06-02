@@ -35,7 +35,7 @@ class BinaryTree {
          * @returns 
          */
     addNode(value) {
-            if (!this.root) {
+            if (this.root === undefined) {
                 this.root = new TreeNode(value);
                 this.nextInsertLevel.push(this.root);
                 this.nextIndex = 0;
