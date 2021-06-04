@@ -3,5 +3,5 @@
     <label for="number">Enter Number:</label>
     <input type="number" class="form-control" [(ngModel)]="enteredNumber" name="number" placeholder="EnterNumber"><br>
     <button class="btn btn-success form-control" (click)="findFebonachi()">Find</button>
-    <p *ngIf="output" [ngStyle]="{color: outputColor}">{{output}}</p>
+    <p [style.color]="outputColor">{{output}}</p>
 </div>

@@ -1,0 +1,35 @@
+<div class="card center">
+    <div class="card-header centerHeading">
+        <h1>Vowel Word Sorter</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <label for="paragraph">Enter paragraph to sort:</label>
+                    <textarea [(ngModel)]="enteredText" class="form-control" name="paragraph" cols="30" rows="10" placeholder="Enter Text"></textarea>
+                </div>
+                <div>
+                    <label [style.color]="msgColor">{{message}}</label>
+                    <button class="btn btn-primary form-control" (click)="sortVowel()">Sort Paragraph</button>
+                </div>
+            </div>
+            <div class="col-md-6 tableScroll">
+                <div class="table-responsive" *ngIf="outputArray.length">
+                    <table class="table table-stripe">
+                        <thead>
+                            <tr>
+                                <th>Vowel Word</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let word of outputArray">
+                                <td>{{word}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
