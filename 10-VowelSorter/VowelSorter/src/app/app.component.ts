@@ -46,8 +46,8 @@ export class AppComponent {
    */
   getVowelArray(arrayOfText: Array<string>): Array<string> {
     let tempArray = [];
-    for (let word of arrayOfText) {
-      let reg = new RegExp(/[aeiou]/i);
+    let reg = new RegExp(/[aeiou]/i);
+    for (let word of arrayOfText) {   
       if (reg.test(word)) {
         tempArray.push(word);
       }
