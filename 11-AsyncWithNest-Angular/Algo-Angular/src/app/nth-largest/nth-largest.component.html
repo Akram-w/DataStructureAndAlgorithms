@@ -23,7 +23,7 @@
                         <label for="nth">Highest Postion needed</label>
                         <input #nth class="form-control" name="nth" type="number" min=0 max={{numbers.length}}>
                         <label [style.color]="msgColor">{{message}}</label>
-                        <button class="btn btn-success form-control" (click)="findNthLargest(nth.value)">
+                        <button class="btn btn-primary form-control" (click)="findNthLargest(nth.value)">
                             Find Largest</button>
                     </div>
                 </div>
