@@ -18,6 +18,9 @@ export class OccurancesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * fuction when click find occurance button to set output
+   */
   findOccurances() {
     this.algoService.findOccurances(this.enteredText).then(resp => {
       console.log(resp);

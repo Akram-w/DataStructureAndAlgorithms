@@ -17,9 +17,19 @@ export class NthLargestComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /**
+   * function to add numbers to array
+   * @param value string value pass with button click
+   */
   addToArray(value: string) {
     this.numbers.push(+value)
   }
+  /**
+   * function triggered when find largest button clicked and set output
+   * @param value string nth value which means index of largest
+   * @returns 
+   */
   async findNthLargest(value: string) {
     console.log(+value);
     if (!(Number.isNaN(+value))) {
@@ -51,6 +61,12 @@ export class NthLargestComponent implements OnInit {
     }
 
   }
+
+  /**
+   * function to set message and color
+   * @param msg string message to display
+   * @param color string color to display
+   */
   setMessage(msg: string, color: string) {
     this.msgColor = color;
     this.message = msg

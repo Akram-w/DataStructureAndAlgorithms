@@ -19,6 +19,9 @@ export class AnagramComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * function triggered when button click and set output
+   */
   findAnagram() {
     console.log(this.wordOne, this.wordTwo)
     this.algoService.findAnagram(this.wordOne, this.wordTwo,
@@ -32,6 +35,9 @@ export class AnagramComponent implements OnInit {
         }
       });
   }
+  /**
+   * function to set all the inputs to default
+   */
   retsetView() {
     this.wordOne = '';
     this.wordTwo = '';
