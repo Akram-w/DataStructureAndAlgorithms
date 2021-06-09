@@ -1,8 +1,10 @@
-Algo Angular
+<h1>Algo Angular</h1>
 
-This project includes UI for
-    -Anagram compairer
-    -Letter Repititon in Sentence
-    -Nth largest value from given array
+<p>This project includes UI for </p>
+  <ul>
+  <li>Anagram compairer</li>
+  <li>Letter Repititon in Sentence</li>
+  <li>Nth largest value from given array</li>
+  </ul>
 
 
