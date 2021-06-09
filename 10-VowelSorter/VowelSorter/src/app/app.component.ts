@@ -23,7 +23,7 @@ export class AppComponent {
       let vowelArray = this.getVowelArray(arrayOfText);
       this.outputArray = this.getSortedArray(vowelArray)
       this.msgColor='green'
-      this.message=`${this.outputArray.length} vowel included words found from ${arrayOfText.length} words`
+      this.message=`${this.outputArray.length} vowel words found from ${arrayOfText.length} words`
     } else {
       this.msgColor = 'red'
       this.message = "Enter a text to sort"
@@ -46,8 +46,8 @@ export class AppComponent {
    */
   getVowelArray(arrayOfText: Array<string>): Array<string> {
     let tempArray = [];
-    let reg = new RegExp(/[aeiou]/i);
-    for (let word of arrayOfText) {   
+    for (let word of arrayOfText) {
+      let reg = new RegExp(/[aeiou]/i);
       if (reg.test(word)) {
         tempArray.push(word);
       }

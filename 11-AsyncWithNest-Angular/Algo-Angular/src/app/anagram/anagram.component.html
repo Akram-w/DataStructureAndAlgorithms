@@ -1,0 +1,23 @@
+<div class="card center">
+    <div class="card-header centerHeading">
+        <h1>Anagrom Compairer</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <label for="fWord">Enter First Word:</label>
+                    <input type="text" [(ngModel)]="wordOne" class="form-control" name="fWord" placeholder="Enter Frist-Word" />
+                </div>
+                <div>
+                    <label for="fWord">Enter Second Word:</label>
+                    <input type="text" [(ngModel)]="wordTwo" class="form-control" name="fWord" placeholder="Enter Second-Word" />
+                </div>
+                <div>
+                    <label [style.color]="msgColor">{{message}}</label>
+                    <button class="btn btn-primary form-control" (click)="findAnagram()">Find Anagram</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

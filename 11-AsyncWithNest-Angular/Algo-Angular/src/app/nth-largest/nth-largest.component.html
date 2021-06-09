@@ -1,0 +1,33 @@
+<div class="card center">
+    <div class="card-header centerHeading">
+        <h1>Nth Position Largest Finder</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <label for="number">Add Numbers to find Largest:</label>
+                        <input type="number" #number class="form-control" name="number" placeholder="Enter Text">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary form-control buttonMargin" (click)="addToArray(number.value)">
+                            Add to List</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Entered Numbers : [{{numbers.toString()}}]</label>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="nth">Highest Postion needed</label>
+                        <input #nth class="form-control" name="nth" type="number" min=0 max={{numbers.length}}>
+                        <label [style.color]="msgColor">{{message}}</label>
+                        <button class="btn btn-success form-control" (click)="findNthLargest(nth.value)">
+                            Find Largest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

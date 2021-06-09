@@ -1,0 +1,23 @@
+.center {
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+}
+
+.centerHeading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card-body label,
+textarea,
+button {
+    margin-bottom: 5px;
+}
+
+.tableScroll {
+    height: 23em;
+    overflow-y: scroll;
+}

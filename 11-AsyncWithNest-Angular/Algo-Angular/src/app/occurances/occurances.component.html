@@ -1,0 +1,38 @@
+<div class="card center">
+    <div class="card-header centerHeading">
+        <h1>Letter Occurances Finder</h1>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <label for="paragraph">Enter Text:</label>
+                    <textarea [(ngModel)]="enteredText" class="form-control" name="paragraph" cols="30" rows="10" placeholder="Enter Text"></textarea>
+                </div>
+                <div>
+                    <label [style.color]="msgColor">{{message}}</label>
+                    <button class="btn btn-primary form-control" (click)="findOccurances()">Find Letter
+                        findOccurances</button>
+                </div>
+            </div>
+            <div class="col-md-6 tableScroll">
+                <div class="table-responsive" *ngIf="output">
+                    <table class="table table-stripe">
+                        <thead>
+                            <tr>
+                                <th>Letter</th>
+                                <th>Occurances</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let word of output |keyvalue">
+                                <td>{{word.key}}</td>
+                                <td>{{word.value}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
