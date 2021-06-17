@@ -38,6 +38,9 @@ export class AddPetComponent implements OnInit, OnDestroy {
     nextCheckupDate: ['', Validators.required],
   });
 
+  /**
+   * function to trigger when user click save button
+   */
   onSubmit() {
     console.log(this.petForm.value)
     this.petAdder$ = this.petService.savePet(this.petForm.value).subscribe(response => {

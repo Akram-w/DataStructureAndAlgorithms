@@ -17,6 +17,7 @@ export class UpdatePetComponent implements OnInit, OnDestroy {
   pet$!: Subscription;
   petUpdated$!: Subscription;
   petId!: number;
+  
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -27,7 +28,6 @@ export class UpdatePetComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.pet$.unsubscribe();
-    // this.petUpdated$.unsubscribe();
   }
 
   ngOnInit(): void {
@@ -44,15 +44,8 @@ export class UpdatePetComponent implements OnInit, OnDestroy {
           })
       })
     });
-
-    this.petForm = this.fb.group({
-      name: ['', Validators.required],
-      type: ['', Validators.required],
-      breed: ['', Validators.required],
-      age: ['', Validators.required],
-      nextCheckupDate: ['', Validators.required],
-    });
   }
+
   petForm = this.fb.group({
     firstName: ['', Validators.required],
     type: ['', Validators.required],
@@ -61,6 +54,9 @@ export class UpdatePetComponent implements OnInit, OnDestroy {
     nextDate: ['', Validators.required],
   });
 
+  /**
+   * function triggered when user click update button
+   */
   onSubmit() {
     console.log(this.petForm.value)
     let id = this.route.snapshot.paramMap.get('id');

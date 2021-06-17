@@ -23,19 +23,27 @@ export class PetDashboardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.petList$.unsubscribe();
     this.petRefresh$.unsubscribe();
-    // this.petDelete$?.unsubscribe();
   }
 
   ngOnInit(): void {
     this.load();
     this.petRefresh$ = this.petService.refresh.subscribe(value => this.pets?.push(value));
   }
+
+  /**
+   * function to load all pets and add ot array;
+   */
   load() {
     this.petList$ = this.petService.getAllPet().subscribe(response => {
       console.log(response.body);
       this.pets = response.body;
     });
   }
+
+  /**
+   * function to delete pet from db as per give id
+   * @param id number id of the pet to be deleted from db
+   */
   deletePet(id: number) {
     console.log(id);
     this.petDelete$ = this.petService.deletePet(+id).subscribe(response => {

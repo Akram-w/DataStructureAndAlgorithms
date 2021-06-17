@@ -10,6 +10,11 @@ export class MessageService {
 
   msges$ = this.msgSource.asObservable();
 
+  /**
+   * function to add msges to show as notification
+   * @param type string type of the message
+   * @param msg string message to show
+   */
   addMsg(type: string, msg: string) {
     this.msgSource.next(new Message(type, msg));
   }

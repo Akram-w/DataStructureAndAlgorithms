@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  MatSnackBar,
-} from '@angular/material/snack-bar';
-import { Observable, Subscription } from 'rxjs';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {  Subscription } from 'rxjs';
 import { Message } from './dataModel/message';
 import { MessageService } from './services/message.service';
 
@@ -25,8 +23,11 @@ export class AppComponent implements OnInit {
     })
   }
 
+  /**
+   * function to show notification in snackbar
+   * @param msg Message which has msg css class name as type and message to be showed
+   */
   showMessage(msg: Message) {
-    console.log(msg.type)
     this._snackBar.open(msg.message, 'Close', {
       horizontalPosition: "end",
       verticalPosition: 'top',
