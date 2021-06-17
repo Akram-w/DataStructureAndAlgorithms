@@ -1,0 +1,17 @@
+.center {
+    margin-top: 5em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.centerHeading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/* .tableScroll {
+    height: 23em;
+    overflow-y: scroll;
+} */

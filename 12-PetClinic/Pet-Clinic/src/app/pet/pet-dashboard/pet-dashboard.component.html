@@ -1,0 +1,57 @@
+<div class="card  center">
+    <div class="card-header text-center bg-transparent">
+        <div class="row">
+            <div class="col-md-11">
+                <h2>Pets List</h2>
+            </div>
+            <div class="col-md-1">
+                <a routerLink="/pet/create">
+                    <button routerLinkActive="router-link-active" matTooltip="Add New Pet" mat-button class="btn btn-primary">
+                        <mat-icon style="line-height: 22px;">addition</mat-icon>
+                        <!-- New Pet -->
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-stripe">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Breed</th>
+                                <th>Age</th>
+                                <th>Next Clinic</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="pets">
+                            <tr *ngFor="let pet of pets">
+                                <td>{{pet.name}}</td>
+                                <td>{{pet.type}}</td>
+                                <td>{{pet.breed}}</td>
+                                <td>{{pet.age}}</td>
+                                <td>{{pet.nextCheckupDate}}</td>
+                                <td>
+                                    <button routerLink="update/{{pet.id}}" matTooltip="Edit Pet" mat-icon-button aria-label="Edit">
+                                        <mat-icon style="line-height: 14px;color:blue">edit</mat-icon>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button (click)="deletePet(pet.id)" matTooltip="Delete Pet" mat-icon-button aria-label="Edit">
+                                        <mat-icon style="line-height: 14px;color:red">delete</mat-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

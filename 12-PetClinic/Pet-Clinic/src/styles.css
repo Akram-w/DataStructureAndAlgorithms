@@ -1,0 +1,11 @@
+/* @import "~bootstrap/dist/css/bootstrap.css" */
+
+.success {
+    background: #0dad06;
+    color: aliceblue;
+}
+
+.danger {
+    background: #f01010;
+    color: aliceblue;
+}
