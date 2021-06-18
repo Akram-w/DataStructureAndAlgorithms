@@ -47,11 +47,11 @@ export class UpdatePetComponent implements OnInit, OnDestroy {
   }
 
   petForm = this.fb.group({
-    firstName: ['', Validators.required],
+    name: ['', Validators.required],
     type: ['', Validators.required],
     breed: ['', Validators.required],
     age: ['', Validators.required],
-    nextDate: ['', Validators.required],
+    nextCheckupDate: ['', Validators.required],
   });
 
   /**
